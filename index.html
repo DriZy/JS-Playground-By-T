@@ -1,37 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
-        <title>Simple Clock with Vanila Javascript</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Countdown Clock</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <h2>Digital Clock</h2>
-        <div class="clock">
-          <h1 id="digital-time"></h1>
-        </div>  
-
-        <h2>Analog Clock</h2>
-        <div id="analog-time">
-            <div class="clock-face">
-                <div class="hand hour-hand"></div>
-                <div class="hand minute-hand"></div>
-                <div class="hand second-hand"></div>
-                <div class="center"></div>
-                <div class="number number-1">1</div>
-                <div class="number number-2">2</div>
-                <div class="number number-3">3</div>
-                <div class="number number-4">4</div>
-                <div class="number number-5">5</div>
-                <div class="number number-6">6</div>
-                <div class="number number-7">7</div>
-                <div class="number number-8">8</div>
-                <div class="number number-9">9</div>
-                <div class="number number-10">10</div>
-                <div class="number number-11">11</div>
-                <div class="number number-12">12</div>
+        <header>
+            <h1>Countdown Clock</h1>
+        </header>
+        <main>
+            <div id="countdown-container">
+                <p id="countdown-display">00:00:00</p>
+                <input id="countdown-input" type="datetime-local">
+                <button id="countdown-start">Start Countdown</button>
             </div>
-        </div>
-        <script src="script.js"></script>
+        </main>
     </body>
 </html>

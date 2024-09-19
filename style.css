@@ -1,139 +1,57 @@
-
+/* Global styles */
 body {
-        font-family: Arial, sans-serif;
-        height: 100vh;
-        margin: 0;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #282c34;
-      }
-      
-      .clock {
-        margin-bottom: 50px;
-      }
-      
-      #digital-time {
-        font-size: 48px;
-        font-weight: bold;
-        color: #61dafb;
-      }
-      
-      #analog-time {
-        margin-top: 50px;
-      }
-      
-      .clock-face {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        border: 1px solid #030242;
-        border-radius: 50%;
-        background-color: #cccaca;
-      }
-      
-      .hand {
-        position: absolute;
-        left: 50%;
-        bottom: 50%;
-        transform-origin: 100% 100%;
-        transform: translateX(-50%); 
-        transition: transform 0.5s;
-      }
-      
-      .hour-hand {
-        width: 3px;
-        height: 50px;
-        background-color: #030242;
-        /* transform: rotate(0deg); */
-        border-radius: 6px 6px 0 0;
-      }
-      
-      .minute-hand {
-        width: 2px;
-        height: 60px;
-        background-color: #030242;
-        /* transform: rotate(0deg); */
-        border-radius: 4px 4px 0 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-      }
-      
-      .second-hand {
-        width: 1px;
-        height: 70px;
-        background-color: red;
-        /* transform: rotate(0deg); */
-        border-radius: 2px 2px 0 0;
-    }
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
 
-    .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 10px;
-        height: 10px;
-        background-color: #030242;
-        border-radius: 50%;
-      }
+/* Main styles */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-      .number {
-        position: absolute;
-        font-family: "Arial", sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        color: #000;
-        text-align: center;
-      }
+/* Countdown container styles */
+#countdown-container {
+  background-color: #f7f7f7;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-    /* Position the numbers */
-.number-1 {
-    top: 5%;
-    left: 75%;
-  }
-  .number-2 {
-    top: 17%;
-    left: 85%;
-  }
-  .number-3 {
-    top: 40%;
-    left: 93%;
-  }
-  .number-4 {
-    top: 65%;
-    left: 89%;
-  }
-  .number-5 {
-    top: 84%;
-    left: 73%;
-  }
-  .number-6 {
-    top: 92%;
-    left: 50%;
-  }
-  .number-7 {
-    top: 84%;
-    left: 24%;
-  }
-  .number-8 {
-    top: 65%;
-    left: 6%;
-  }
-  .number-9 {
-    top: 40%;
-    left: 1%;
-  }
-  .number-10 {
-    top: 17%;
-    left: 8%;
-  }
-  .number-11 {
-    top: 5%;
-    left: 18%;
-  }
-  .number-12 {
-    top: -1%;
-    left: 47%;
-  }
+/* Countdown display styles */
+#countdown-display {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Input field styles */
+#countdown-input {
+  padding: 0.5em;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styles */
+#countdown-start {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
