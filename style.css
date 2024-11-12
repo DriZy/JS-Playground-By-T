@@ -1,11 +1,10 @@
-/* Global styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #282c34;
 }
 
-/* Header styles */
 header {
   background-color: #333;
   color: #fff;
@@ -13,45 +12,40 @@ header {
   text-align: center;
 }
 
-/* Main styles */
 main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
-/* Countdown container styles */
-#countdown-container {
+section {
   background-color: #f7f7f7;
-  padding: 2em;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  margin: 1em;
+  width: 30%;
 }
 
-/* Countdown display styles */
-#countdown-display {
-  font-size: 48px;
-  font-weight: bold;
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-/* Input field styles */
-#countdown-input {
-  padding: 0.5em;
-  font-size: 18px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+li {
+  margin-bottom: 1em;
 }
 
-/* Button styles */
-#countdown-start {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
 }

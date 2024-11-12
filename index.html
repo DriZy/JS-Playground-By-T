@@ -1,22 +1,68 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Countdown Clock</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <h1>Countdown Clock</h1>
-        </header>
-        <main>
-            <div id="countdown-container">
-                <p id="countdown-display">00:00:00</p>
-                <input id="countdown-input" type="datetime-local">
-                <button id="countdown-start">Start Countdown</button>
-            </div>
-        </main>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu With Vanila js</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" crossorigin="anonymous" defer="true"></script>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Menu</h1>
+        <input id="filter" type="search" placeholder="Search menu items">
+    </header>
+    <main>
+        <section id="appetizers">
+            <h2>Appetizers</h2>
+            <ul>
+                <li>
+                    <h3>Bruschetta</h3>
+                    <p>$8.99</p>
+                </li>
+                <li>
+                    <h3>Calamari</h3>
+                    <p>$10.99</p>
+                </li>
+                <!-- Add more menu items here -->
+                <!-- For appetizers 
+
+                Fruit salad
+                Vegetable salad 
+                Snacks like nuts 
+                Pepper soup snails, fish 
+                Vegetable soups
+                
+                For the main course we have
+                
+                Snails and plantains 
+                Fufu corn and huckleberry 
+                Fufu and Eru
+                Rice and stew
+                Fried rice
+                Plantain and vegetable 
+                
+                For Dessert 
+                
+                Cakes variety 
+                Sausage rolls and white sauce
+                Ice cream -->
+            </ul>
+        </section>
+        <section id="main">
+            <h2>Main course</h2>
+            <ul>
+                <li>
+                    <h3>Grilled Chicken</h3>
+                    <p>$14.99</p>
+                </li>
+                <li>
+                    <h3>Pan-Seared Salmon</h3>
+                    <p>$19.99</p>
+                </li>
+                <!-- Add more menu items here -->
+            </ul>
+        </section>
+    </main>
+</body>
 </html>
