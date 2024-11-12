@@ -86,6 +86,7 @@ grocery_list
 ├── index.html        # HTML structure for the app
 ├── styles.css        # CSS styles for the app
 └── script.js         # JavaScript functionality
+```
 
 ## Contributing
 
