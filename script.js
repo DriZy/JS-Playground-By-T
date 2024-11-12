@@ -1,14 +1,33 @@
-const menuItems = document.querySelectorAll('li');
-const filterInput = document.getElementById('filter');
+const form = document.getElementById('grocery-form')
+const input = document.getElementById('grocery-input')
+const list = document.getElementById('grocery-list')
 
-filterInput.addEventListener('input', (e) => {
-    const searchTerm = e.target.value.toLowerCase();
-    menuItems.forEach((item) => {
-        const itemName = item.querySelector('h3').textContent.toLowerCase();
-        if (itemName.includes(searchTerm)) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
-    });
-});
+form.addEventListener('submit', function(e) {
+    e.preventDefault()
+
+    const item = input.value.trim()
+
+    if(item !== ''){
+        addItem(item)
+        input.value=''
+    }
+})
+
+function addItem(item){
+   const li = document.createElement("li")
+   li.textContent = item
+
+   const deleteBtn = document.createElement('button')
+   deleteBtn.textContent= "Delete"
+
+   deleteBtn.classList.add('delete-btn')
+   li.appendChild(deleteBtn)
+
+   list.appendChild(li)
+
+   deleteBtn.addEventListener('click', function(e){
+    list.removeChild(li)
+   })
+
+}
+

@@ -1,68 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Menu With Vanila js</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" crossorigin="anonymous" defer="true"></script>
-</head>
-<body>
-    <header>
-        <h1>Restaurant Menu</h1>
-        <input id="filter" type="search" placeholder="Search menu items">
-    </header>
-    <main>
-        <section id="appetizers">
-            <h2>Appetizers</h2>
-            <ul>
-                <li>
-                    <h3>Bruschetta</h3>
-                    <p>$8.99</p>
-                </li>
-                <li>
-                    <h3>Calamari</h3>
-                    <p>$10.99</p>
-                </li>
-                <!-- Add more menu items here -->
-                <!-- For appetizers 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grocery List App</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" crossorigin="anonymous" defer="true"></script>    
+    </head>
+    <body>
 
-                Fruit salad
-                Vegetable salad 
-                Snacks like nuts 
-                Pepper soup snails, fish 
-                Vegetable soups
-                
-                For the main course we have
-                
-                Snails and plantains 
-                Fufu corn and huckleberry 
-                Fufu and Eru
-                Rice and stew
-                Fried rice
-                Plantain and vegetable 
-                
-                For Dessert 
-                
-                Cakes variety 
-                Sausage rolls and white sauce
-                Ice cream -->
-            </ul>
-        </section>
-        <section id="main">
-            <h2>Main course</h2>
-            <ul>
-                <li>
-                    <h3>Grilled Chicken</h3>
-                    <p>$14.99</p>
-                </li>
-                <li>
-                    <h3>Pan-Seared Salmon</h3>
-                    <p>$19.99</p>
-                </li>
-                <!-- Add more menu items here -->
-            </ul>
-        </section>
-    </main>
-</body>
+        <div class="container">
+            <h1>Grocery List</h1>
+            <form id="grocery-form">
+                <input type="text" id="grocery-input"  placeholder="Add an item" required/>
+                <button type="submit">Add</button>
+            </form>
+            <ul id="grocery-list"></ul>
+        </div>
+        
+    </body>
 </html>
