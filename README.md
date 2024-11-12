@@ -48,7 +48,7 @@ To run this project locally, follow these steps:
 
 2. **Clone the repository**:
     ```bash
-    git clone https://github.com/DriZy/JS-Playground-By-T/pull/new/grocery_list
+    git clone https://github.com/DriZy/JS-Playground-By-T/grocery_list
     ```
 
 3. **Navigate to the project directory**:
@@ -62,7 +62,7 @@ To run this project locally, follow these steps:
 ## File Structure
 
 ```bash
-grocery-list-app/
+grocery_list/
 │
 ├── index.html        # HTML structure for the app
 ├── styles.css        # CSS styles for the app
@@ -72,7 +72,7 @@ grocery-list-app/
 
 3. **Navigate to the project directory**:
     ```bash
-    cd grocery-list-app
+    cd grocery_list
     ```
 
 4. **Open the project**:
@@ -81,8 +81,27 @@ grocery-list-app/
 ## File Structure
 
 ```bash
-grocery-list-app/
+grocery_list
 │
 ├── index.html        # HTML structure for the app
 ├── styles.css        # CSS styles for the app
 └── script.js         # JavaScript functionality
+
+## Contributing
+
+Feel free to submit issues or pull requests if you find bugs or have ideas for improvements. If you'd like to contribute:
+
+1. **Fork the project**.
+2. **Create your feature branch**: `git checkout -b feature/your-feature-name`.
+3. **Commit your changes**: `git commit -m 'Add some feature'`.
+4. **Push to the branch**: `git push origin feature/your-feature-name`.
+5. **Open a pull request** to the `main` branch of the original repository.
+
+## License
+
+This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
+
+## GitHub Repository
+
+You can access the project repository at: [https://github.com/DriZy/JS-Playground-By-T/tree/grocery_list](https://github.com/DriZy/JS-Playground-By-T/tree/grocery_list)
+
